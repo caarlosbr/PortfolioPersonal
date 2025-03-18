@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-lang="title">Práctica 14 - Carlos Borreguero Redondo</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header id="main" class="header">
+      <img class="logo" src="video/Cs.gif" alt="Diseño sin título" />
+      <div class="tema-contenedor">
+        <div id="tema" class="cambiar-tema"></div>
+
+        <div class="idioma">
+          <label for="langToggle">
+            <input
+              class="cambiarIdiomaButton"
+              style="display: none"
+              type="checkbox"
+              id="langToggle"
+            />
+            <img
+              class="cambiarIdioma"
+              id="langToggle"
+              src="https://img.icons8.com/color/48/spain2-circular.png"
+              alt="spain2-circular"
+            />
+            <img
+              class="cambiarIdioma"
+              id="langToggle"
+              src="https://img.icons8.com/color/48/great-britain-circular.png"
+              alt="great-britain-circular"
+            />
+          </label>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="menu">
+        <a href="#main"
+          ><span class="item" id="main"><i class="fa-solid fa-house"></i></span
+        ></a>
+        <a href="#about"
+          ><span class="item"><i class="fa-regular fa-user"></i></span
+        ></a>
+        <a href="#proyectos"
+          ><span class="item"><i class="fa-solid fa-code"></i></span
+        ></a>
+      </div>
+
+      <section class="presentacion">
+        <link rel="preload" href="img/foto.webp" as="image" />
+
+        <div class="div-foto">
+          <img
+            class="foto-perfil"
+            src="img/foto.webp"
+            alt="FotoPerfil"
+            width="300"
+            height="300"
+          />
+        </div>
+        <div class="info">
+          <h1 data-lang="header.greeting">Hola, soy Carlos</h1>
+          <h2 class="desarollador" data-lang="header.developer">
+            Web Developer
+          </h2>
+          <div class="div-habilidades">
+            <img
+              class="habilidad-logo"
+              src="img/logo-html.webp"
+              loading="lazy"
+              alt=""
+            />
+            <img
+              class="habilidad-logo"
+              src="img/logo-css.webp"
+              loading="lazy"
+              alt=""
+            />
+            <img
+              class="habilidad-logo"
+              src="img/logo-js.webp"
+              loading="lazy"
+              alt=""
+            />
+            <img
+              class="habilidad-logo"
+              src="img/logo-php.webp"
+              loading="lazy"
+              alt=""
+            />
+            <i class="fa-brands fa-react"></i>
+            <i class="fa-brands fa-figma"></i>
+            <img
+              class="habilidad-logo"
+              src="img/logo-canvas.webp"
+              loading="lazy"
+              alt=""
+            />
+            <i class="fa-solid fa-terminal"></i>
+            <img
+              class="habilidad-logo"
+              src="img/Mysql_logo.webp"
+              loading="lazy"
+              alt=""
+            />
+            <i class="fa-brands fa-docker" style="color: #74c0fc"></i>
+          </div>
+          <div class="prueba-div">
+            <a href="files/CurrículumVitaeCarlos.pdf" class="cv" download
+              >CV <i class="fa-solid fa-download"></i
+            ></a>
+            <a href="https://github.com/caarlosbr" class="cv"
+              >Github <i class="fa-brands fa-github"></i
+            ></a>
+          </div>
+          <a href="https://www.linkedin.com/in/carlos-borreguero-540823296/">
+            <button class="ver" data-lang="header.linkedinButton">
+              Linkedin <i class="fa-brands fa-linkedin"></i>
+            </button>
+          </a>
+        </div>
+        <a href="#about" class="flecha">
+          <i class="fa-solid fa-chevron-down"></i>
+        </a>
+      </section>
+
+      <section id="about" class="about">
+        <div class="sobre-mi">
+          <h2 class="h2-about" data-lang="about.title">
+            Sobre mí <span class="punto">.</span>
+          </h2>
+          <p class="p-about" data-lang="about.description">
+            Soy un chico de 19 años, competente con actitud proactiva y
+            capacidad rápida de aprendizaje
+          </p>
+        </div>
+        <h2 class="h2-about" data-lang="about.softSkillsTitle">Soft Skills</h2>
+        <div class="softs">
+          <article class="card">
+            <i id="icono-card" class="fa-solid fa-user-group"></i>
+            <span data-lang="about.softSkills.teamwork">Trabajo en Equipo</span>
+          </article>
+          <article class="card">
+            <i id="icono-card" class="fa-solid fa-hand-holding-heart"></i>
+            <span data-lang="about.softSkills.empathy">Empatía</span>
+          </article>
+          <article class="card">
+            <i id="icono-card" class="fa-solid fa-lightbulb"></i>
+            <span data-lang="about.softSkills.problemSolving"
+              >Resolución de problemas</span
+            >
+          </article>
+          <article class="card">
+            <i id="icono-card" class="fa-solid fa-head-side-virus"></i>
+            <span data-lang="about.softSkills.adaptability">Adaptabilidad</span>
+          </article>
+          <article class="card">
+            <i id="icono-card" class="fa-solid fa-brain"></i>
+            <span data-lang="about.softSkills.emotionalIntelligence"
+              >Inteligencia emocional</span
+            >
+          </article>
+        </div>
+        <div class="skills-container">
+          <div class="div-habilidades3">
+            <h2 class="h2-about2" data-lang="skills.frontEnd">Hard Skills</h2>
+            <div class="div-habilidades2">
+              <div class="pruebaDiv">
+                <img
+                  class="habilidad-logo2"
+                  src="img/logo-html.webp"
+                  loading="lazy"
+                  alt=""
+                />
+                <span class="span-logo">HTML</span>
+              </div>
+              <div class="pruebaDiv">
+                <img
+                  class="habilidad-logo2"
+                  src="img/logo-css.webp"
+                  loading="lazy"
+                  alt=""
+                />
+                <span class="span-logo">CSS</span>
+              </div>
+              <div class="pruebaDiv">
+                <img
+                  class="habilidad-logo2"
+                  src="img/logo-js.webp"
+                  loading="lazy"
+                  alt=""
+                />
+                <span class="span-logo">JavaScript</span>
+              </div>
+              <div class="pruebaDiv">
+                <img
+                  class="logo-php"
+                  src="img/logo-php.webp"
+                  loading="lazy"
+                  alt=""
+                />
+                <span class="span-logo">PHP</span>
+              </div>
+              <div class="pruebaDiv">
+                <img
+                  class="logo-php"
+                  src="img/Mysql_logo.webp"
+                  loading="lazy"
+                  alt=""
+                />
+                <span class="span-logo">MySQL</span>
+              </div>
+              <div class="pruebaDiv">
+                <img
+                  class="habilidad-logo2"
+                  src="img/logo-react.webp"
+                  loading="lazy"
+                  alt=""
+                />
+                <span class="span-logo">React</span>
+              </div>
+            </div>
+          </div>
+          <!--         <div class="div-habilidades3">
+          <h2 class="h2-about" data-lang="skills.backEnd">Back-End Skills</h2>
+          <div class="div-habilidades2">
+            <img class="logo-php" src="img/logo-php.webp" loading="lazy" alt="">
+            <img class="logo-php" src="img/Mysql_logo.webp" loading="lazy" alt="">
+
+          </div>
+        </div> -->
+          <div class="div-habilidades3">
+            <h2 class="h2-about2" data-lang="skills.otherTools">
+              Otras Herramientas
+            </h2>
+            <div class="div-habilidades2">
+              <div class="pruebaDiv">
+                <i id="habilidad-logo2" class="fa-brands fa-figma"></i>
+                <span class="span-logo">Figma</span>
+              </div>
+              <div class="pruebaDiv">
+                <img
+                  class="habilidad-logo2"
+                  src="img/logo-canvas.webp"
+                  loading="lazy"
+                  alt=""
+                />
+                <span class="span-logo">Canvas</span>
+              </div>
+              <div class="pruebaDiv">
+                <i id="habilidad-logo2" class="fa-solid fa-terminal"></i>
+                <span class="span-logo">Bash</span>
+              </div>
+              <div class="pruebaDiv">
+                <i
+                  id="habilidad-logo2"
+                  class="fa-brands fa-docker"
+                  style="color: #74c0fc"
+                ></i>
+                <span class="span-logo">Docker</span>
+              </div>
+              <div class="pruebaDiv">
+                <i id="habilidad-logo2" class="fa-brands fa-github"></i>
+                <span class="span-logo">GitHub</span>
+              </div>
+              <div class="pruebaDiv">
+                <img
+                  class="habilidad-logo2"
+                  src="img/logo-vscode.webp"
+                  alt=""
+                />
+                <span class="span-logo">VSCode</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="linea-tiempo">
+          <h3 class="h3-titulo" data-lang="timeline.education">Educación</h3>
+          <div class="caja">
+            <span
+              ><b data-lang="timeline.webDevelopment"
+                >Desarollo de Aplicaciones Web</b
+              ></span
+            ><br />
+            <i class="fa-solid fa-calendar-days"></i>
+            <span class="span-anio">2023-2025</span>
+          </div>
+          <div class="caja">
+            <span
+              ><b data-lang="timeline.networks"
+                >Sistemas Microinformáticos y Redes</b
+              ></span
+            ><br />
+            <i class="fa-solid fa-calendar-days"></i>
+            <span class="span-anio">2021-2023</span>
+          </div>
+        </div>
+      </section>
+
+      <h2 data-lang="projects.title" style="text-align: center">Proyectos</h2>
+
+      <section id="proyectos" class="proyectos">
+        <article class="proyecto">
+          <div id="cambiarMokcup1" class="cambiarMokcup">
+            <button class="mockup" id="mockupPc1">
+              <i class="fa-solid fa-laptop"></i>
+            </button>
+            <button class="mockup" id="mockupMovil1">
+              <i class="fa-solid fa-tablet-screen-button"></i>
+            </button>
+          </div>
+          <div class="proyecto-info">
+            <div id="pc1" class="macbook">
+              <div class="screen">
+                <div
+                  class="viewport"
+                  style="
+                    object-fit: cover;
+                    background-image: url('img/proyecto1.webp');
+                  "
+                ></div>
+              </div>
+              <div class="base"></div>
+              <div class="notch"></div>
+            </div>
+            <div id="movil1" class="mobile-phone">
+              <div class="brove"><span class="speaker"></span></div>
+              <div
+                class="screenMovil"
+                style="
+                  object-fit: cover;
+                  background-image: url('img/prueba2.png');
+                "
+              ></div>
+            </div>
+            <img
+              id="imagen"
+              class="proyecto-img"
+              src="img/proyecto1.webp"
+              alt=""
+            />
+            <h3 class="titulo-proyecto" data-lang="projects.project1.title">
+              Casas Rurales
+            </h3>
+            <p data-lang="projects.project1.description">
+              CasasRurales es una web que permite a los usuarios encontrar casas
+              rurales
+            </p>
+            <div class="tecnologias-div">
+              <div class="tecnologias1">
+                <p class="tecnologia">HTML</p>
+                <p class="tecnologia">CSS</p>
+                <p class="tecnologia">JS</p>
+                <p class="tecnologia">Figma</p>
+              </div>
+              <div class="tecnologias2">
+                <a href="https://github.com/caarlosbr/CasasRurales.github.io"
+                  ><span
+                    class="ver-proyecto"
+                    data-lang="projects.project1.github"
+                    >Github <i class="fa-brands fa-github"></i></span
+                ></a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="proyecto">
+          <div id="cambiarMokcup2" class="cambiarMokcup">
+            <button class="mockup" id="mockupPc2">
+              <i class="fa-solid fa-laptop"></i>
+            </button>
+            <button class="mockup" id="mockupMovil2">
+              <i class="fa-solid fa-tablet-screen-button"></i>
+            </button>
+          </div>
+          <div class="proyecto-info">
+            <div id="pc2" class="macbook">
+              <div class="screen">
+                <div
+                  class="viewport"
+                  style="
+                    object-fit: cover;
+                    background-image: url('img/proyecto2.webp');
+                  "
+                ></div>
+              </div>
+              <div class="base"></div>
+              <div class="notch"></div>
+            </div>
+            <div id="movil2" class="mobile-phone">
+              <div class="brove"><span class="speaker"></span></div>
+              <div
+                class="screenMovil"
+                style="background-image: url('img/proyecto2movill.webp')"
+              ></div>
+            </div>
+            <img
+              id="imagen"
+              class="proyecto-img"
+              src="img/proyecto2.webp"
+              alt=""
+            />
+            <h3 class="titulo-proyecto" data-lang="projects.project2.title">
+              Memmory
+            </h3>
+            <p data-lang="projects.project2.description">
+              Clásico juego de Memoria de números realizado en JavaScript y CSS
+            </p>
+            <div class="tecnologias-div">
+              <div class="tecnologias1">
+                <p class="tecnologia">HTML</p>
+                <p class="tecnologia">CSS</p>
+                <p class="tecnologia">JS</p>
+              </div>
+              <div class="tecnologias2">
+                <a
+                  href="https://github.com/caarlosbr/MisProyectos/tree/main/proyects/Memory"
+                  ><span
+                    class="ver-proyecto"
+                    data-lang="projects.project2.github"
+                    >Github <i class="fa-brands fa-github"></i></span
+                ></a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="proyecto">
+          <div id="cambiarMokcup3" class="cambiarMokcup">
+            <button class="mockup" id="mockupPc3">
+              <i class="fa-solid fa-laptop"></i>
+            </button>
+            <button class="mockup" id="mockupMovil3">
+              <i class="fa-solid fa-tablet-screen-button"></i>
+            </button>
+          </div>
+          <div class="proyecto-info">
+            <div id="pc3" class="macbook">
+              <div class="screen">
+                <div
+                  class="viewport"
+                  style="background-image: url('img/proyecto3_11zon.webp')"
+                ></div>
+              </div>
+              <div class="base"></div>
+              <div class="notch"></div>
+            </div>
+            <div id="movil3" class="mobile-phone">
+              <div class="brove"><span class="speaker"></span></div>
+              <div
+                class="screenMovil"
+                style="background-image: url('img/proyecto2movil.webp')"
+              ></div>
+            </div>
+            <img
+              id="imagen"
+              class="proyecto-img"
+              src="img/proyecto3_11zon.webp"
+              alt=""
+            />
+            <h3 class="titulo-proyecto" data-lang="projects.project3.title">
+              Gestión de Portfolios
+            </h3>
+            <p data-lang="projects.project3.description">Esto es una prueba</p>
+            <div class="tecnologias-div">
+              <div class="tecnologias1">
+                <p class="tecnologia">PHP</p>
+                <p class="tecnologia">Apache</p>
+                <p class="tecnologia">MySQL</p>
+                <p class="tecnologia">HTML</p>
+                <p class="tecnologia">CSS</p>
+              </div>
+              <div class="tecnologias2">
+                <a href="https://github.com/caarlosbr/Portfolio"
+                  ><span
+                    class="ver-proyecto"
+                    data-lang="projects.project3.github"
+                    >Github <i class="fa-brands fa-github"></i></span
+                ></a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="proyecto">
+          <div id="cambiarMokcup4" class="cambiarMokcup">
+            <button class="mockup" id="mockupPc4">
+              <i class="fa-solid fa-laptop"></i>
+            </button>
+            <button class="mockup" id="mockupMovil4">
+              <i class="fa-solid fa-tablet-screen-button"></i>
+            </button>
+          </div>
+          <div class="proyecto-info">
+            <div id="pc4" class="macbook">
+              <div class="screen">
+                <div
+                  class="viewport"
+                  style="background-image: url('img/proyecto4.webp')"
+                ></div>
+              </div>
+              <div class="base"></div>
+              <div class="notch"></div>
+            </div>
+            <div id="movil4" class="mobile-phone">
+              <div class="brove"><span class="speaker"></span></div>
+              <div
+                class="screenMovil"
+                style="background-image: url('img/proyecto4movil.webp')"
+              ></div>
+            </div>
+            <img
+              id="imagen"
+              class="proyecto-img"
+              src="img/proyecto4.webp"
+              alt=""
+            />
+            <h3 class="titulo-proyecto" data-lang="projects.project4.title">
+              API REST y Cliente
+            </h3>
+            <p data-lang="projects.project4.description">
+              API desarrollada en PHP con MVC y cliente en React sobre Centros
+              Civicos
+            </p>
+            <div class="tecnologias-div">
+              <div class="tecnologias1">
+                <p class="tecnologia">HTML</p>
+                <p class="tecnologia">CSS</p>
+                <p class="tecnologia">React</p>
+                <p class="tecnologia">PHP</p>
+              </div>
+              <div class="tecnologias2">
+                <a href="https://github.com/caarlosbr/APICentros"
+                  ><span
+                    class="ver-proyecto"
+                    data-lang="projects.project2.github"
+                    >Github <i class="fa-brands fa-github"></i></span
+                ></a>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <footer class="contacto">
+        <h2 class="h2-contacto" data-lang="contact.title">Contacto</h2>
+        <div class="div-contacto">
+          <span class="span-form" id="correo">carlosborregueror@gmail.com</span>
+          <i id="copiarBtn" class="fa-regular fa-clone"></i>
+        </div>
+
+        <div class="div-contacto">
+          <a id="item-footer" href="mailto:carlosborregueror@gmail.com"
+            ><i class="fa-solid fa-envelope"></i
+          ></a>
+          <a href="https://github.com/caarlosbr?tab=repositories"
+            ><i id="item-footer" class="fa-brands fa-github"></i
+          ></a>
+          <a href="https://www.linkedin.com/in/carlos-borreguero-540823296/"
+            ><i id="item-footer" class="fa-brands fa-linkedin"></i
+          ></a>
+        </div>
+      </footer>
+
+      <script src="js/index.js"></script>
+      <script src="js/cambiarIdioma.js"></script>
+    </main>
+  </body>
+</html>
